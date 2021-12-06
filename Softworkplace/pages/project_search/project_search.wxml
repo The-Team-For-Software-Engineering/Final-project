@@ -1,0 +1,53 @@
+<!--pages/project/project.wxml-->
+<view class='head'>
+  <image class="back" wx:if="{{select_num==0}}" src="../../images/返回.png" bindtap="return"></image>
+  <view class="select_no" wx:if="{{select_num>0}}" bindtap="selectquit">
+    <text>取消</text>
+  </view>
+  <view class="title" wx:if="{{select_num==0}}">
+    <text>邀请码查询</text>
+  </view>
+  <view class="title_select" wx:if="{{select_num>0}}">
+    <text>已选中{{select_num}}个</text>
+  </view>
+  <view class="select_all" wx:if="{{select_num>0}}" bindtap="selectall">
+    <text>全选</text>
+  </view>
+</view>
+<search_bar bindeventSearchListener='projectsSearch' bindeventSearchCancelListener='projectsClearSearch'></search_bar>
+<view class="settingline">
+  <view class="select_box">
+    <select_box prop-array='{{selectArray}}' bind:myget='getSort'> </select_box>
+  </view>
+  <view class="project_control">
+    <image class="project_icon" id="quit" src="../../images/退出.png" bindtap="project_quit"></image>
+    <image class="project_icon" id="join" src="../../images/锁定.png" bindtap="project_join"></image>
+  </view>
+</view>
+<scroll-view class='scbg' scroll-y='true'>
+<block wx:for-items="{{showdata}}" wx:for-item="itemName" wx:for-index="index" wx:key="key">
+  <view class='box' wx:if="{{itemName.flag}}">
+    <view class='itemblock'>
+      <view>
+        <radio class="radio" checked="{{itemName.checked}}" data-index="{{index}}" bindtap="check">
+        </radio>
+      </view>
+      <view>
+        <view class='firstblock'>
+          <image class='icon' src='../../images/文件夹.png'></image>
+          <view class='name'>
+            <text class='showname'>{{itemName.projectname}}</text>
+          </view>
+        </view>
+        <view class='secondblock'>
+          <view class='code'>
+            <text class='showcode'>邀请码：{{itemName.show ?  itemName.invitecode : '*****'}} </text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+</scroll-view>
+<buttom_menu wx:if="{{select_num==0}}" ></buttom_menu>
+<bottom_menu_invitecodesearch wx:if="{{select_num>0}}" bindeventShowClick="showClick" bindeventHideClick="showClick" ></bottom_menu_invitecodesearch>

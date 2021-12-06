@@ -1,0 +1,35 @@
+<!--pages/create_project/create_project.wxml-->
+<view class='head'>
+  <image class="back" src="../../images/返回.png" bindtap="return"></image>
+  <text class="title">帮助</text>
+</view>
+<view class="help_line">
+<text class="help_text">权限分级表</text>
+<image class="right_icon" src="../../images/右箭头.png" bindtap="authority_table"></image>
+</view>
+<view class="help_line">
+<text class="help_text">什么是权限分级</text>
+<image class="right_icon" src="../../images/右箭头.png" bindtap="authority_help"></image>
+</view>
+<view class="help_line">
+<text class="help_text">关于菜单栏操作</text>
+<image class="right_icon" src="../../images/右箭头.png" wx:if="{{!more_help}}" bindtap="more_help"></image>
+<image class="right_icon" src="../../images/下拉.png" wx:if="{{more_help}}" bindtap="more_help"></image>
+</view>
+<view class="help_line" wx:if="{{more_help}}">
+<text class="help_more">项目操作</text>
+<image class="right_icon" src="../../images/右箭头.png" bindtap="project_help"></image>
+</view>
+<view class="help_line" wx:if="{{more_help}}">
+<text class="help_more">创建操作</text>
+<image class="right_icon" src="../../images/右箭头.png" bindtap="create_help"></image>
+</view>
+<view class="help_line" wx:if="{{more_help}}">
+<text class="help_more">发现操作</text>
+<image class="right_icon" src="../../images/右箭头.png" bindtap="search_help"></image>
+</view>
+<view class="help_line" wx:if="{{more_help}}">
+<text class="help_more">主页操作</text>
+<image class="right_icon" src="../../images/右箭头.png" bindtap="main_help"></image>
+</view>
+<buttom_menu></buttom_menu>

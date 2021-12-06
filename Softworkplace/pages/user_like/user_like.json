@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "search_bar":"../../components/search_bar/search_bar",
+    "buttom_menu":"../../components/buttom_menu/buttom_menu",
+    "select_box":"../../components/select_box/select_box",
+    "bottom_menu_like":"../../components/bottom_menu_like/bottom_menu_like"
+  },
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "navigationBarTitleText": "发现",
+  "navigationBarTextStyle": "black"
+}

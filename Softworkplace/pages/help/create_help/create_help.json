@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "buttom_menu":"../../../components/buttom_menu/buttom_menu"
+  }
+}

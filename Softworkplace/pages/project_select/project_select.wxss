@@ -1,0 +1,49 @@
+/* pages/project_select/project_select.wxss */
+.scbg{
+  width: 100%;
+  height: 55%;
+  left: 0rpx;
+  right: 0rpx;
+  top: 350rpx;
+  position: absolute;
+}
+.head
+{
+  font-size: 60rpx;
+  text-align: center;
+  padding:40rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.title
+{
+  position: relative;
+  left:250rpx;
+}
+.project_control{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  left: 75%;
+  top:75%;
+}
+.project_icon{
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+}
+.file_box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.file_box .file_style{
+  width: 100%;
+  height: 94rpx;
+  line-height: 91rpx;
+  font-size: 26px;
+  border: 1px solid rgb(151, 146, 146);
+  text-indent: 10px;
+}

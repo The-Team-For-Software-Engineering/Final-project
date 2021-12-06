@@ -1,0 +1,45 @@
+/* pages/create_project/create_project.wxss */
+.head {
+  position: relative;
+  display: flex;
+  font-size: 60rpx;
+  text-align: center;
+  padding: 40rpx 0 40rpx 0;
+}
+.input_line
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding:13px 0 13px 0;
+}
+.left_icon
+{
+  height: 30px;
+  width: 30px;
+  padding:0 20px 0 20px;
+}
+input
+{
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+
+.back
+{
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.submit
+{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  left:150px;
+}
+.title
+{
+  position: relative;
+  left:75px;
+}

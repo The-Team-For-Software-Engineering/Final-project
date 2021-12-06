@@ -1,0 +1,37 @@
+<!--pages/create_project/create_project.wxml-->
+<form class="creat_project">
+<view class='head'>
+  <image class="back" src="../../images/返回.png" bindtap="return"></image>
+  <text class="title">新建项目</text>
+  <image class="submit" bindtap="makesure" src="../../images/确认.png" formType="submit"></image>
+</view>
+<view class="input_line">
+<image class="left_icon" src="../../images/标题.png"></image>
+<input class="form_input"  bindinput="itemname"  placeholder="项目名称"/>
+</view>
+<view class="input_line">
+<image class="left_icon" src="/images/project.png"></image>
+<input class="form_input" bindinput="itemmask" placeholder="项目备注说明"/>
+</view>
+<view class="input_line">
+<image class="left_icon" src="../../images/添加成员.png"></image>
+<input class="form_input" bindinput="itemnum" placeholder="项目最大人数，上限20人"/>
+</view>
+<view class="input_line">
+<image class="left_icon" src="../../images/成员.png"></image>
+<text>开启项目面向所有人</text>
+<switch bindchange="switchto" class="switch" style="display: block;">  </switch>
+</view>
+<view class="input_line">
+<image  class="left_icon" src="../../images/权限.png"></image>
+<text>权限开启</text>
+<switch bindchange="opendata" class="switch" style="display: block;">  </switch>
+</view>
+<view class="input_line">
+<image class="left_icon" src="../../images/邀请码.png"></image>
+<text wx:if="{{switchto}}">{{invitecode }}</text>
+<text  wx:else>当面向所有人时，生成邀请码。</text>
+</view>
+</form>
+<buttom_menu></buttom_menu>
+

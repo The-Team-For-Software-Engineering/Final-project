@@ -1,0 +1,67 @@
+<!--pages/project/project.wxml-->
+<view class='head'>
+  <view class="select_no" wx:if="{{select_num>0}}" bindtap="selectquit">
+    <text>取消</text>
+  </view>
+  <view class="title" wx:if="{{select_num==0}}">
+    <text>项目页</text>
+  </view>
+  <view class="title_select" wx:if="{{select_num>0}}">
+    <text>已选中{{select_num}}个</text>
+  </view>
+  <view class="select_all" wx:if="{{select_num>0}}" bindtap="selectall">
+    <text>全选</text>
+  </view>
+</view>
+<search_bar bindeventSearchListener='projectSearch' bindeventSearchCancelListener='projectClearSearch'></search_bar>
+<view class="settingline">
+  <view class="select_box">
+    <select_box prop-array='{{selectArray}}' bind:myget='getSort'> </select_box>
+  </view>
+  <view class="project_control">
+    <image class="project_icon" id="upload" src="../../images/传输.png" bindtap="file_upload"></image>
+    <image class="project_icon" id="history" src="../../images/历史.png" bindtap="project_history"></image>
+    <image class="project_icon" id="plan" src="../../images/日历.png" bindtap="create_plan"></image>
+  </view>
+</view>
+<scroll-view class='scbg' scroll-y='true'>
+<block wx:for-items="{{showdata}}" wx:for-item="itemName" wx:for-index="index" wx:key="key">
+  <view class='box' wx:if="{{itemName.flag}}"> 
+    <view class='itemblock'>
+      <view>
+        <radio class="radio" checked="{{itemName.checked}}" data-index="{{index}}" bindtap="check">
+        </radio>
+      </view>
+      <view  data-index="{{index}}">
+        <view class='firstblock' bindtap="project_select">
+          <image class='icon' src='../../images/文件夹.png'></image>
+          <view class='name'>
+            <text class='showname'>{{itemName.projectname}}</text>
+          </view>
+          <view class='people'>
+            <text class='showpeople'>人数：{{itemName.people_num}}/{{itemName.people_max}}</text>
+          </view>
+        </view>
+        <view class='secondblock'>
+          <view class='time' bindtap="project_select">
+            <text class='showdate'>最近修改日期：{{itemName.time_date}} </text>
+            <text class='showtime'>{{itemName.time_clock}}</text>
+          </view>
+          <view class='detail'>
+            <image src='../../images/下拉.png' data-index="{{index}}" wx:if="{{itemName.shownote==false}}" class='detail_icon' bindtap="shownote"></image>
+            <image src='../../images/返回.png' data-index="{{index}}" wx:if="{{itemName.shownote}}" class='detail_icon' bindtap="shownote"></image>
+          </view>
+        </view>
+        <view class='thirdlock' wx:if="{{itemName.shownote}}">
+          <view class='note'>
+            <text class='shownote'>备注：{{itemName.notes}} </text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+</scroll-view>
+<buttom_menu wx:if="{{select_num==0}}"></buttom_menu>
+<bottom_menu_project wx:if="{{select_num>0}}" bind:more="moremenu" project_index = "{{project_index}}" bind:delect="delect" bind:rename="rename"></bottom_menu_project>
+<bottom_menu_more wx:if="{{more_menu && select_num>0}}"></bottom_menu_more>

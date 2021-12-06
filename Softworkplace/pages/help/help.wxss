@@ -1,0 +1,36 @@
+/* pages/create_project/create_project.wxss */
+.head {
+  position: relative;
+  display: flex;
+  font-size: 60rpx;
+  text-align: center;
+  padding: 20rpx 10rpx 20rpx 0;
+}
+.help_line
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left:20px;
+  padding:20rpx 10rpx 20rpx 0;
+}
+.right_icon
+{
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top:2px;
+  left:100px;
+}
+.back
+{
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.title
+{
+  position: relative;
+  left:105px;
+}

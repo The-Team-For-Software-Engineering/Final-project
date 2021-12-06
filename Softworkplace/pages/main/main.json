@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "search_bar":"../../components/search_bar/search_bar",
+    "buttom_menu":"../../components/buttom_menu/buttom_menu",
+    "user_info":"../../components/user_info/user_info"
+  },
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "navigationBarTitleText": "主页",
+  "navigationBarTextStyle": "black"
+}

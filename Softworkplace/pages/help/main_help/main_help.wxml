@@ -1,0 +1,11 @@
+<!--pages/help/authority_table/authority_table.wxml-->
+<view class='head'>
+  <image class="back" src="../../../images/返回.png" bindtap="return"></image>
+  <text class="title">什么是权限分级</text>
+</view>
+<scroll-view class='scbg' scroll-y='true'>
+<image class="help" src="../../../images/主页说明1.png" ></image>
+<image class="help" src="../../../images/主页说明2.png" ></image>
+<image class="help" src="../../../images/主页说明3.png" ></image>
+</scroll-view>
+<buttom_menu></buttom_menu>

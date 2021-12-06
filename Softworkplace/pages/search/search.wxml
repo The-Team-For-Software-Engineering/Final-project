@@ -1,0 +1,59 @@
+<!--pages/search/search.wxml-->
+<view class='head'>
+  <view class="select_no" wx:if="{{select_num>0}}" bindtap="selectquit">
+  <text>取消</text>
+  </view>
+  <view class="title" wx:if="{{select_num==0}}">
+  <text>发现页</text>
+  </view>
+  <view class="title_select" wx:if="{{select_num>0}}">
+  <text>已选中{{select_num}}个</text>
+  </view>
+  <view class="select_all" wx:if="{{select_num>0}}"
+    bindtap="selectall">
+  <text>全选</text>
+  </view>
+</view>
+<search_bar bindeventSearchListener='searchListener' bindeventSearchCancelListener='clearSearch'></search_bar>
+<select_box prop-array='{{selectArray}}' bind:myget='gettSort'> </select_box>
+<scroll-view class='scbg' scroll-y='true'>
+<block wx:for-items="{{showdata}}" wx:for-item="itemName" wx:for-index="index" wx:key="key">
+  <view class='box'  wx:if="{{itemName.flag}}">
+    <view class='itemblock'>
+      <view>
+        <image class='left_icon' wx:if="{{itemName.project_type==0}}" src='../../images/文件.png'></image>
+        <image class='left_icon' wx:if="{{itemName.project_type==1}}" src='../../images/函数.png'></image>
+      </view>
+      <view>
+        <view class='firstblock'>
+          <view class='name'>
+            <text class='showname'>{{itemName.projectname}}</text>
+          </view>
+          <view class='download'>
+            <text class='showdownload'>下载次数：{{itemName.download_num}}</text>
+          </view>
+          <radio class="radio" checked="{{itemName.checked}}" data-index="{{index}}" bindtap="check">
+          </radio>
+        </view>
+        <view class='secondblock'>
+          <view class='time'>
+            <text class='showdate'>{{itemName.time_date}} </text>
+            <text class='showtime'>{{itemName.time_clock}} {{itemName.user_name}}</text>
+          </view>
+          <view class='detail'>
+            <image src='../../images/下拉.png' data-index="{{index}}" wx:if="{{itemName.shownote==false}}" class='detail_icon' bindtap="shownote"></image>
+            <image src='../../images/返回.png' data-index="{{index}}" wx:if="{{itemName.shownote}}" class='detail_icon' bindtap="shownote"></image>
+          </view>
+        </view>
+        <view class='thirdlock' wx:if="{{itemName.shownote}}">
+          <view class='note'>
+            <text class='shownote'>备注：{{itemName.notes}} </text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+</scroll-view>
+<buttom_menu wx:if="{{select_num==0}}"></buttom_menu>
+<bottom_menu_search wx:if="{{select_num>0}}" bindeventLikeListener='mylike'></bottom_menu_search>

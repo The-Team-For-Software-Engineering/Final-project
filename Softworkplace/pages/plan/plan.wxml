@@ -1,0 +1,33 @@
+<!--pages/project/project.wxml-->
+<view class='head'>
+  <image class="back" src="../../images/返回.png" bindtap="cancel_edit" wx:if="{{edited}}"></image>
+  <view class="title" >
+    <text>个人计划</text>
+  </view>
+</view>
+<search_bar></search_bar>
+<view class="settingline">
+  <view class="select_box">
+    <select_box prop-array='{{selectArray}}' bind:myget='getSort'> </select_box>
+  </view>
+  <view class="project_control">
+    <image class="project_icon" id="plan" src="../../images/日历.png" bindtap="file_upload"></image>
+    <image class="project_icon" id="create" src="../../images/新增计划.png" bindtap="create_plan"></image>
+    <image class="project_icon" id="edit" src="../../images/编辑.png" bindtap="edit_plan"></image>
+  </view>
+</view>
+<scroll-view class='scbg' scroll-y='true'>
+<block wx:for-items="{{plandata}}" wx:for-item="itemName" wx:for-index="index" wx:key="key">
+  <view class='box'>
+    <view class='planline'>
+        <view class="plan">
+          <text class="show_plan">{{itemName.plan_time}}:{{itemName.plan_name}}</text>
+        </view>
+        <radio class="radio" checked="{{itemName.checked}}" data-index="{{index}}" bindtap="check" wx:if="{{edited}}">
+        </radio>
+      </view>
+  </view>
+</block>
+</scroll-view>
+<buttom_menu wx:if="{{select_num==0}}"></buttom_menu>
+<bottom_menu_plan wx:if="{{select_num>0}}"></bottom_menu_plan>

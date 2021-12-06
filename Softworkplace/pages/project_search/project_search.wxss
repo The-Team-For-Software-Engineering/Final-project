@@ -1,0 +1,136 @@
+/* pages/project/project.wxss */
+.scbg{
+  width: 100%;
+  height: 55%;
+  left: 0rpx;
+  right: 0rpx;
+  top: 350rpx;
+  position: absolute;
+}
+.head
+{
+  font-size: 60rpx;
+  text-align: center;
+  padding:40rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.back
+{
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.title
+{
+  position: relative;
+  left:120rpx;
+}
+.select_no
+{
+  position: relative;
+  left:0rpx;
+}
+.title_select
+{
+  position: relative;
+  left:100rpx;
+}
+.select_all
+{
+  position: relative;
+  left:200rpx;
+}
+.project_icon
+{
+   height:30px ;
+   width: 30px;
+}
+
+.project_control
+{
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items: flex-end;
+  left: 110px;
+  right:0px;
+}
+
+.firstblock
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top:5px;
+}
+.people
+{
+  justify-content:flex-end;
+  align-items: flex-end;
+  font-size: 15px;
+  left:130px;
+  position: relative;
+}
+.name
+{
+  font-size: 15px;
+}
+.secondblock
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.icon
+{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top:3px;
+}
+.detail_icon
+{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top:8px;
+  left:100px;
+}
+.itemblock
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.settingline
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.radio
+{
+  width: 40px;
+  height: 40px;
+  top:10px;
+  left:8px;
+  position: relative;
+  transform: scale(0.5);
+}
+.showtime
+{
+  font-size: 10px;
+  top:5px;
+  position: relative;
+  left:160px;
+}
+.showdate
+{
+  font-size: 10px;
+  top:5px;
+  position: relative;
+}

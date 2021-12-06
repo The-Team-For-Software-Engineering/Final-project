@@ -1,0 +1,17 @@
+<view class='head'>
+  <view class="title">
+  <text>{{project_name}}</text>
+  </view>
+</view>
+<search_bar></search_bar>
+<view class="project_control" bindtap="choose_file">
+   <image src="../../images/传输.png" class="project_icon"></image>
+</view>
+<scroll-view class='scbg' scroll-y='true'>
+<block class="file_box">
+     <view wx:for="{{file_name}}" wx:for-index="file_index" 
+     wx:for-item="fileName" class="file_style" data-index="{{file_index}}" bindtap="open_file">
+        {{fileName}}
+     </view>
+</block>
+</scroll-view>

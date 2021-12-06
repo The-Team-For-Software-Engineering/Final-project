@@ -1,0 +1,9 @@
+<!--pages/help/authority_table/authority_table.wxml-->
+<view class='head'>
+  <image class="back" src="../../../images/返回.png" bindtap="return"></image>
+  <text class="title">什么是权限分级</text>
+</view>
+<view class="container">
+  <text class="content">权限分级系统是为了方便SOFT Workplace项目管理功能所衍生出来的分级系统，一共分为：创建人，管理员，一级权限，二级权限，三级权限，访客，黑名单七个等级，权限依次降低。引入权限分级，方便高等级的成员对低等级成员进行管理。也可以更大化避免文件的误删。</text>
+</view>
+<buttom_menu></buttom_menu>

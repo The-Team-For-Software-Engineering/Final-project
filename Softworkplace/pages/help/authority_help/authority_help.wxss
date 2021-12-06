@@ -1,0 +1,24 @@
+/* pages/help/authority_help/authority_help.wxss */
+.head {
+  position: relative;
+  display: flex;
+  font-size: 60rpx;
+  text-align: center;
+  padding: 20rpx 10rpx 0rpx 0;
+}
+.back
+{
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.content
+{ position: fixed;
+  top:100px;
+  width: 80%;
+}
+.title
+{
+  position: relative;
+  left:35px;
+}

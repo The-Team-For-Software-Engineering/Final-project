@@ -1,0 +1,33 @@
+/* pages/main/main.wxss */
+
+.head {
+  font-size: 60rpx;
+  text-align: center;
+  left: 400rpx;
+  padding: 40rpx;
+}
+
+.user_menu {
+  width: 500rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 6px 0 6px 30px;
+}
+
+.user_icon {
+  width: 60rpx;
+  height: 60rpx;
+  padding-right: 6px;
+}
+
+.user_text {
+  padding: 2px 0 2px 0;
+  font-size: 15px;
+  color: darkgray;
+}
+
+.help_message {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}

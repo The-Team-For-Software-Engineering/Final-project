@@ -1,0 +1,7 @@
+<!--pages/help/authority_table/authority_table.wxml-->
+<view class='head'>
+  <image class="back" src="../../../images/返回.png" bindtap="return"></image>
+  <text class="title">权限分级表</text>
+</view>
+<image class="authority" src="../../../images/权限分级表.png" ></image>
+<buttom_menu></buttom_menu>

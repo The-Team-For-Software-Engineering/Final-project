@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search_bar":"../../components/search_bar/search_bar"
+  },
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "navigationBarTitleText": "项目",
+  "navigationBarTextStyle": "black"
+}

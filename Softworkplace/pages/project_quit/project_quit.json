@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "search_bar":"../../components/search_bar/search_bar",
+    "buttom_menu":"../../components/buttom_menu/buttom_menu",
+    "select_box":"../../components/select_box/select_box",
+    "bottom_menu_quit":"../../components/bottom_menu_quit/bottom_menu_quit"
+  },
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "navigationBarTitleText": "项目",
+  "navigationBarTextStyle": "black"
+}

@@ -1,0 +1,30 @@
+<!--pages/main/main.wxml-->
+<view class='head'>
+<text >主页</text>
+</view>
+<user_info></user_info>
+<view class='user_menu'  bindtap="user_help">
+<image class='user_icon' src='../../images/帮助.png'></image>
+<text class='user_text' >帮助</text>
+</view>
+<view class='user_menu' bindtap="user_like">
+<image class='user_icon' src='../../images/收藏.png'></image>
+<text class='user_text'>收藏</text>
+</view>
+<view class='user_menu' bindtap="people_message">
+<image class='user_icon' src='../../images/留言.png'></image>
+<text class='user_text'>留言</text>
+</view>
+<view class='user_menu' bindtap="project_search">
+<image class='user_icon' src='../../images/邀请.png'></image>
+<text class='user_text'>项目邀请码查询</text>
+</view>
+<view class='user_menu' bindtap="project_join">
+<image class='user_icon' src='../../images/锁定.png'></image>
+<text class='user_text'>项目加入</text>
+</view>
+<view class='help_message'>
+<text>更多请访问\n</text>
+<text>https://blog.csdn.net/</text>
+</view>
+<buttom_menu></buttom_menu>

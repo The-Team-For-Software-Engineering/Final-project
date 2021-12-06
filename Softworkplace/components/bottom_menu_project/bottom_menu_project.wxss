@@ -1,0 +1,103 @@
+/* components/bottom_menu_project/bottom_menu_project.wxss */
+.bottombutton{
+  width: 180rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomImg{
+  width: 80rpx;
+  height: 80rpx;
+  bottom: 100rpx;
+  padding:20rpx;
+}
+.bottomtext{
+  font-size: 30rpx;
+}
+.bottomrow{
+  background-color: white;
+  width: 100%;
+  height: 15%;
+  bottom: 0rpx;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  width:100%;
+  height:2rpx;
+  background:#aaa;
+  position: fixed;
+  bottom: 180rpx;
+}
+/* --------------------- */
+/* 弹窗样式 */
+.model{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 10;
+  opacity: 0.5;
+  top: 0;
+  left:0;
+}
+.window_box{
+  width: 80%;
+  position: fixed;
+  top:300rpx;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 0 auto;
+  padding: 55rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15rpx;
+  width: 100%;
+}
+.top_box .title{
+  font-size: 45rpx;
+}
+.top_box .back{
+  text-align: center;
+  color: #f0a500;
+  font-size: 30rpx;
+}
+.inputbox{
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  margin: 40rpx 0rpx;
+}
+.wish_put{
+  width: 100%;
+  border: #ededef 1rpx solid;
+  background-color: #f6f7fb;
+  border-radius: 12rpx;
+  padding: 30rpx 20rpx;
+  margin: 20rpx 0rpx;
+}
+.confirm{
+  background-color: #fec600;
+  text-align: center;
+  width: 100%;
+  border-radius: 50rpx;
+  padding: 25rpx;
+  color: white;
+}

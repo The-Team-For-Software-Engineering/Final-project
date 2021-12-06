@@ -1,0 +1,21 @@
+
+
+<view class='line'></view>
+<view class='bottomrow'>
+  <view class='bottombutton' bindtap="first_select">
+    <image class='bottomImg' src='/images/project.png'></image>
+    <text class='bottomtext'>项目</text>
+  </view>
+  <view class='bottombutton' bindtap="second_select">
+    <image class='bottomImg' src='../../images/新建.png'></image>
+    <text class='bottomtext'>创建</text>
+  </view>
+  <view class='bottombutton' bindtap="third_select">
+    <image class='bottomImg' src='../../images/发现.png'></image>
+    <text class='bottomtext'>发现</text>
+  </view>
+  <view class='bottombutton' bindtap="fourth_select">
+    <image class='bottomImg' src='../../images/主页.png'></image>
+    <text class='bottomtext'>主页</text>
+  </view>
+</view>

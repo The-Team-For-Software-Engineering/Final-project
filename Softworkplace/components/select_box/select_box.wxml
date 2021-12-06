@@ -1,0 +1,11 @@
+<!--components/selcet_box/select_box.wxml-->
+<view class='com-selectBox'>
+  <view class='com-sContent' bindtap='selectToggle'>
+    <image src='../../images/下箭头.png' class='com-Img' ></image>
+    <view class='com-sTxt'>{{nowText==' ' ? propArray[0].text : nowText  }}</view>
+    <image src='../../images/下拉.png' class='com-sImg' animation="{{animationData}}"></image>
+  </view>
+  <view class='com-sList' wx:if="{{selectShow}}">
+    <view wx:for="{{propArray}}" data-index="{{index}}" wx:key='unique' class='com-sItem' bindtap='setText'>{{item.text}}</view>
+  </view>
+</view>

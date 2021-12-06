@@ -1,0 +1,20 @@
+<!--components/bottom_menu_search/bottom_menu_search.wxml-->
+<view class='line'></view>
+<view class='bottomrow'>
+  <view class='bottombutton' bindtap="quit">
+    <image class='bottomImg' src='../../images/取消.png'></image>
+    <text class='bottomtext'>取消</text>
+  </view>
+  <view class='bottombutton' bindtap="delete">
+    <image class='bottomImg' src='../../images/删除.png'></image>
+    <text class='bottomtext'>删除</text>
+  </view>
+  <view class='bottombutton' bindtap="rename">
+    <image class='bottomImg' src='../../images/重命名.png'></image>
+    <text class='bottomtext'>重命名</text>
+  </view>
+  <view class='bottombutton' bindtap="select">
+    <image class='bottomImg' src='../../images/确认.png'></image>
+    <text class='bottomtext'>全选</text>
+  </view>
+</view>

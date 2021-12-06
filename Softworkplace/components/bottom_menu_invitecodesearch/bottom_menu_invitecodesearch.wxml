@@ -1,0 +1,16 @@
+<!--components/bottom_menu_search/bottom_menu_search.wxml-->
+<view class='line'></view>
+<view class='bottomrow'>
+  <button class="btn-share"  open-type='share'>
+    <image class='bottomImg' src='../../images/邀请码.png'></image>
+    <text class='bottomtext' open-type='share'>分享</text>
+  </button>
+  <view class='bottombutton' bindtap="show" >
+    <image class='bottomImg' src='../../images/显示.png'></image>
+    <text class='bottomtext'>显示</text>
+  </view>
+  <view class='bottombutton' bindtap="hide">
+    <image class='bottomImg' src='../../images/隐藏.png'></image>
+    <text class='bottomtext'>隐藏</text>
+  </view>
+</view>

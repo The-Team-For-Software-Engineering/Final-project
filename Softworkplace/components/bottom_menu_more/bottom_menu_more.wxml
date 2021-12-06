@@ -1,0 +1,21 @@
+<!--components/bottom_menu_project/bottom_menu_project.wxml-->
+<view class='line'></view>
+<view class='bottomrow'>
+  <view class='bottombutton' bindtap="copy">
+    <image class='bottomImg' src='../../images/复制.png'></image>
+    <text class='bottomtext'>复制</text>
+  </view>
+  <view class='bottombutton' bindtap="move">
+    <image class='bottomImg' src='../../images/移动.png'></image>
+    <text class='bottomtext'>移动</text>
+  </view>
+  <view class='bottombutton' bindtap="share">
+    <image class='bottomImg' src='../../images/邀请码.png'></image>
+    <text class='bottomtext'>分享</text>
+  </view>
+  <view class='bottombutton' bindtap="like">
+    <image class='bottomImg' src='../../images/收藏.png'></image>
+    <text class='bottomtext'>收藏</text>
+  </view>
+</view>
+

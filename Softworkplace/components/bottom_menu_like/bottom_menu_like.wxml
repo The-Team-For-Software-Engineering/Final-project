@@ -1,0 +1,12 @@
+<!--components/bottom_menu_search/bottom_menu_search.wxml-->
+<view class='line'></view>
+<view class='bottomrow'>
+  <view class='bottombutton' bindtap="share">
+    <image class='bottomImg' src='../../images/邀请码.png'></image>
+    <text class='bottomtext'>分享</text>
+  </view>
+  <view class='bottombutton' bindtap="delete">
+    <image class='bottomImg' src='../../images/删除.png'></image>
+    <text class='bottomtext'>删除</text>
+  </view>
+</view>

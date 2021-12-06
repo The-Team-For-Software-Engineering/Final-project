@@ -1,0 +1,9 @@
+<!--components/user_info/user_info.wxml-->
+<view class="userinfo">
+  <block wx:if="{{canIUseOpenData}}">
+    <view class="userinfo-avatar" bindtap="bindViewTap">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName"></open-data>
+  </block>
+</view>

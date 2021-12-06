@@ -1,0 +1,32 @@
+<!--components/bottom_menu_project/bottom_menu_project.wxml-->
+<view class="model" catchtouchmove='preventTouchMove' wx:if='{{rename_window}}'></view>
+<view class="window_box" wx:if='{{rename_window}}'>
+    <view class="top_box">
+       <text class="title">修改项目名</text>
+       <view class="back" bindtap="back">返回</view>
+    </view>
+    <view style="width:100%" class='input_box'>
+      <input style="width:100%" bindinput='wish_input' placeholder='请输入项目名' placeholder-class="holder_cls" class='wish_put'></input>
+    </view>
+    <view style="width:94%" class='confirm' bindtap='confirm'>确定</view>
+</view>
+<view class='line'></view>
+<view class='bottomrow'>
+  <view class='bottombutton' bindtap="download">
+    <image class='bottomImg' src='../../images/下载.png'></image>
+    <text class='bottomtext'>下载</text>
+  </view>
+  <view class='bottombutton' bindtap="delete">
+    <image class='bottomImg' src='../../images/删除.png'></image>
+    <text class='bottomtext'>删除</text>
+  </view>
+  <view class='bottombutton' bindtap="rename">
+    <image class='bottomImg' src='../../images/重命名.png'></image>
+    <text class='bottomtext'>重命名</text>
+  </view>
+  <view class='bottombutton' bindtap="more">
+    <image class='bottomImg' src='../../images/更多.png'></image>
+    <text class='bottomtext'>更多</text>
+  </view>
+</view>
+

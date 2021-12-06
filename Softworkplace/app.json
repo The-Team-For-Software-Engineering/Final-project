@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/authorize/authorize",
+    "pages/login/login",
+    "pages/enroll/enroll",
+    "pages/project/project",
+    "pages/main/main",
+    "pages/create/create",
+    "pages/search/search",
+    "pages/create_project/create_project",
+    "pages/help/authority_table/authority_table",
+    "pages/help/authority_help/authority_help"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

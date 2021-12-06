@@ -1,0 +1,10 @@
+create database DB1
+use DB1
+create table project (project_name char(100), people_num int default 0, notes char(100), people_max int default 16, time_create datetime, time_update datetime, switchto int default 0, invitecode char(30), isopen int default 0, project_key char(30) primary key
+create talbe objects (project_key char(30), filename char(30), filekey char(30))
+create table people_join (user_ID char(30), user_perm int default 0, user_admin int default 0
+create table functions (project_name char(100), project_type int, download_num bigint default 0, time_create datetime, time_update datetime, user_ID char(30), notes char(100), project_key char(30) primary key
+create table users (user_ID char(30) primary key, password char(30)
+create table item_table (project_key char(30), time_date datetime, isadmin int
+create table collect_table (project_key char(30), time_date datetime
+create table admin_table (project_key char(30), time_date datetime
